@@ -1,5 +1,7 @@
 site_name: Online-Dokumentationen
-theme: material
+theme: 
+   name: material
+   custom_dir: material
 site_description: A Material Design theme for MkDocs
 site_author: Meinolf Droste
 site_url: http://mdwp-mkdocs-cms.netlify.com/
@@ -29,18 +31,17 @@ repo_url: 'https://github.com/capriosa/mkdocs-cms'
 copyright: '<a href="https://www.mdwp.de">mdwp</a>'
 
 # Theme directory
-theme_dir: material
 
 # Extensions
 markdown_extensions:
-  - markdown.extensions.admonition
-  - markdown.extensions.codehilite(guess_lang=false)
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc(permalink=true)
-  - pymdownx.arithmatex
-  - pymdownx.betterem(smart_enable=all)
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - def_list
+  - footnotes
+  - meta
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.emoji:
@@ -50,7 +51,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
-  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tasklist:
+        custom_checkbox: true
   - pymdownx.tilde
 
 # Page tree

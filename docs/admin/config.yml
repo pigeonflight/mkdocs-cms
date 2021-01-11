@@ -1,11 +1,8 @@
 backend:
-  name: github
-  repo: capriosa/mkdocs-cms
+  name: git-gateway
   branch: master
-
 public_folder: "site"
 media_folder: "site/assets"
-publish_mode: editorial_workflow
 
 collections:
   - name: "doc"
